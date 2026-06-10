@@ -4,3 +4,6 @@ metadata:
   name: openshift-compliance
   labels:
     openshift.io/cluster-monitoring: "true"
+  annotations:
+    argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
+    argocd.argoproj.io/compare-options: IgnoreExtraneous
